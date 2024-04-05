@@ -54,6 +54,14 @@ button {
         scale: 0;
     }
 }
+.add-btn{
+    margin-left: 0;
+}
+.dialog-close-btn {
+    position: absolute;
+    bottom: 32px;
+    left: 90px
+}
 
 ::backdrop {
     background-color: #222831;
@@ -142,7 +150,8 @@ form .form-item:last-child {
     &:hover {
         transform: translateY(-1%);
     }
-    &:hover button{
+
+    &:hover button {
         scale: 1;
     }
 }

@@ -20,37 +20,25 @@
         <dialog>
             <form action="">
                 <div class="form-item">
-                    <input type="text" name="Author" placeholder="Author" id="Author">
+                    <input type="text" name="author" placeholder="Author" id="Author" required>
                 </div>
                 <div class="form-item">
-                    <input type="text" name="Title" placeholder="Title" id="Title">
+                    <input type="text" name="title" placeholder="Title" id="Title" required>
                 </div>
                 <div class="form-item">
                     <input type="text"
                            onkeypress="return (event.charCode !==8 && event.charCode ===0 || (event.charCode >= 48 && event.charCode <= 57))"
-                           name="Number of pages" placeholder="Number of pages:" id="pages-number">
+                           name="totalPages" placeholder="Number of pages:" id="pages-number" required>
                 </div>
-                <div class="form-item">
-                    <input type="checkbox" name="Is read" placeholder="Is read" id="read">
-                    <label for="read">Read</label>
-                </div>
+                <button class="add-btn" type="submit">Add</button>
             </form>
-            <button autofocus>Close</button>
+            <button class="dialog-close-btn" autofocus>Close</button>
         </dialog>
-        <button>Add Book</button>
+        <button class="add-book-btn">Add Book</button>
     </div>
 </div>
 
 <div class="main-container">
-    <div class="book-item">
-        <div class="book-info-item">Book Name</div>
-        <div class="book-info-item">Book Author</div>
-        <div class="book-info-item">200</div>
-        <div class="book-actions">
-            <button type="submit">Read</button>
-            <button type="submit">Delete</button>
-        </div>
-    </div>
 </div>
 
 </body>

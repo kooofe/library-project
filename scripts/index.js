@@ -51,7 +51,20 @@ function add_books_to_library(value){
     pages.classList.add('book-info-item');
     pages.textContent = `${value.pages} pages`;
 
-    item.append(title, author, pages);
+    let actions = document.createElement('div');
+    actions.classList.add('book-actions');
+
+    let readButton = document.createElement('button');
+    readButton.type = 'submit';
+    readButton.textContent = 'Read';
+
+    let deleteButton = document.createElement('button');
+    deleteButton.type = 'submit';
+    deleteButton.textContent = 'Delete';
+
+    actions.append(readButton, deleteButton);
+
+    item.append(title, author, pages, actions);
 
     container.append(item);
 }
